@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.TimeMapper">
+
+    <resultMap id="getAllUserTimeDetail" type="map">
+        <id column="uId" property="uId"></id>
+        <result column="sum(time)" property="time"/>
+        <result column="openId" property="openId"/>
+        <result column="nickName" property="nickName"/>
+        <result column="sSuper" property="sSuper"/>
+        <result column="del" property="del"/>
+    </resultMap>
+
+    <select id="getAllUserTime" resultMap="getAllUserTimeDetail">
+        select t.uId,sum(time),w.* from time t,wxUser w,room r
+                where t.uId=w.uId and t.rId = r.rId group by t.uId order by sum(time) desc
+
+    </select>
+
+    <select id="checkExist" resultType="Time">
+        select * from time where rId=#{rId} and uId=#{uId}
+    </select>
+
+    <update id="updateOrAddTime">
+        <if test="exist!=null">
+            update time set time = time + #{time} where uId=#{uId} and rId=#{rId}
+        </if>
+
+        <if test="exist==null">
+            insert into time value(#{uId},#{rId},#{time})
+        </if>
+    </update>
+</mapper>

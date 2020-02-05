@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.LogMapper">
+    <select id="getLogByRid" resultType="log" >
+        select * from log where rid=#{rid} order by lDate desc
+<!--        <if test="rid != null">-->
+<!--            where rid=#{rid}-->
+<!--        </if>-->
+<!--        order by lDate desc-->
+    </select>
+<!--    <select id="getMyRoomByUid" >-->
+<!--       select rid from log where uid=#{uid} group by rid-->
+<!--    </select>-->
+    <select id="getMyRoomLog" >
+       select * from log where uid=#{uid} and rid=#{rid} order by lDate desc
+    </select>
+
+    <resultMap id="logDetail" type="map">
+        <id column="lId" property="lId"></id>
+        <result column="rId" property="rId"/>
+        <result column="uId" property="uId"/>
+        <result column="state" property="state"/>
+        <result column="lDate" property="lDate"/>
+        <result column="rName" property="rName"/>
+        <result column="address" property="address"/>
+        <result column="del" property="del"/>
+        <result column="nickName" property="nickName"/>
+        <result column="avatarUrl" property="avatarUrl"/>
+    </resultMap>
+    <select id="getLog" resultMap="logDetail">
+        select w.avatarUrl,w.nickName,l.*,r.rName,r.address,r.del from wxUser w,log l,room r where l.rId = r.rId and w.uId = l.uId
+        <choose>
+            <!--    某人在某间教室日志 -->
+            <when test="uId != null and rId != null">
+                and   l.uId = #{uId} and l.rId = #{rId}
+            </when>
+            <!--    查找全部日志 -->
+            <when test="uId == null and rId == null">
+                and  1
+            </when>
+<!--    查找某个人所有日志 -->
+            <when test="uId != null and room==null">
+                and  l.uId = #{uId}
+            </when>
+<!--    查找某个人去过的教室，用group by去重教室 -->
+            <when test="uId != null and room!=null">
+                and   l.uId = #{uId} group by l.rId
+            </when>
+<!--    查找某间教室的所有日志 -->
+
+            <when test="rId != null and room==null">
+                and  l.rId = #{rId}
+            </when>
+            <otherwise>
+
+            </otherwise>
+        </choose>
+
+    </select>
+
+    <insert id="addLog">
+        INSERT into log(uId,rId,state,lDate) VALUE (#{uId},#{rId},#{state},#{lDate});
+    </insert>
+
+    <resultMap id="EntryTime" type="map">
+        <id column="lId" property="lId"></id>
+        <result column="max(lDate)" property="lDate"/>
+    </resultMap>
+
+    <select id="getEntryTime" resultMap="EntryTime">
+        select lId,max(lDate) from log where uId=#{uId} and rId=#{rId} and state = 1
+    </select>
+
+
+</mapper>

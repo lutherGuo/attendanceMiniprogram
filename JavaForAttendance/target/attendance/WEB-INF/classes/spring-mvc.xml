@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+        				   http://www.springframework.org/schema/mvc
+        				   https://www.springframework.org/schema/mvc/spring-mvc.xsd
+                           ">
+<!--    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+<!--        <property name="prefix" value="/WEB-INF/pages/"></property>-->
+<!--        <property name="suffix" value=".jsp"></property>-->
+<!--    </bean>-->
+    <!--会引起一个严重的后果，controller中的所有url全部是404-->
+    <!--    <mvc:view-controller path="/test" view-name="success"></mvc:view-controller>-->
+    <!--告诉springmvc，自己映射的请求就自己处理，不能处理的请求就交给tomcat-->
+    <mvc:default-servlet-handler />
+
+    <!--将springmvc，功能全开-->
+    <mvc:annotation-driven conversion-service="convertService" />
+    <bean id="convertService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"/>
+</beans>

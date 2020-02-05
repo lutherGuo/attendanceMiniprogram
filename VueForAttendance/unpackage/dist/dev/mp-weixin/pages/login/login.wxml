@@ -1,0 +1,1 @@
+<view><button type="primary" open-type="getUserInfo" withCredentials="true" data-event-opts="{{[['getuserinfo',[['getuserinfo',['$event']]]]]}}" bindgetuserinfo="__e">微信登录</button><button style="margin-top:50px;">手机号码登录</button></view>

@@ -1,0 +1,103 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+    "pages/profile/profile",
+    "pages/log/log",
+    "pages/rank/rank",
+    "pages/charge/charge",
+    "pages/index/index",
+    "pages/basics/layout",
+    "pages/basics/background",
+    "pages/basics/text",
+    "pages/basics/icon",
+    "pages/basics/button",
+    "pages/basics/design",
+    "pages/basics/tag",
+    "pages/basics/avatar",
+    "pages/basics/progress",
+    "pages/basics/shadow",
+    "pages/basics/loading",
+    "pages/component/bar",
+    "pages/component/nav",
+    "pages/component/list",
+    "pages/component/card",
+    "pages/component/form",
+    "pages/component/timeline",
+    "pages/component/chat",
+    "pages/component/swiper",
+    "pages/component/modal",
+    "pages/component/steps",
+    "pages/plugin/indexes",
+    "pages/plugin/animation",
+    "pages/plugin/drawer",
+    "pages/plugin/verticalnav",
+    "pages/charge/roomList",
+    "pages/charge/user"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarBackgroundColor": "#0081ff",
+    "navigationBarTitleText": "ColorUi for UniApp",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "white",
+    "selectedColor": "green",
+    "borderStyle": "white",
+    "backgroundColor": "#333333",
+    "height": "100px",
+    "fontSize": "30px",
+    "iconWidth": "100px",
+    "spacing": "10px",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home2.png",
+        "text": "home"
+      },
+      {
+        "pagePath": "pages/charge/charge",
+        "iconPath": "static/tabbar/charge.png",
+        "selectedIconPath": "static/tabbar/charge2.png",
+        "text": "charge"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "iconPath": "static/tabbar/rank.png",
+        "selectedIconPath": "static/tabbar/rank2.png",
+        "text": "rank"
+      },
+      {
+        "pagePath": "pages/log/log",
+        "iconPath": "static/tabbar/log.png",
+        "selectedIconPath": "static/tabbar/log2.png",
+        "text": "log"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "static/tabbar/profile.png",
+        "selectedIconPath": "static/tabbar/profile2.png",
+        "text": "profile"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "/wxcomponents/vant/button/index",
+    "van-icon": "/wxcomponents/vant/icon/index",
+    "van-notify": "/wxcomponents/vant/notify/index",
+    "van-cell": "/wxcomponents/vant/cell/index",
+    "van-cell-group": "/wxcomponents/vant/cell-group/index",
+    "van-transition": "/wxcomponents/vant/transition/index",
+    "van-popup": "/wxcomponents/vant/popup/index",
+    "van-toast": "/wxcomponents/vant/toast/index",
+    "van-action-sheet": "/wxcomponents/vant/action-sheet/index",
+    "basics": "/pages/basics/home",
+    "components": "/pages/component/home",
+    "plugin": "/pages/plugin/home",
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap59.json"
+}

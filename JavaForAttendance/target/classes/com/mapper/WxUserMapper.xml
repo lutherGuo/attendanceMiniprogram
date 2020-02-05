@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.WxUserMapper">
+
+    <select id="getAllWxUser" resultType="WxUser">
+        select * from wxUser
+    </select>
+
+
+    <select id="getUserByUidOrOpenid" resultType="WxUser" parameterType="WxUser">
+        select * from wxUser where
+        <choose>
+            <when test="uId != null and openId == null">
+                uId = #{uId}
+            </when>
+            <when test="openId!= null and uId == null">
+                openId = #{openId}
+            </when>
+            <otherwise>
+
+            </otherwise>
+        </choose>
+    </select>
+
+
+    <insert id="insertWxUser">
+        INSERT into wxUser(openId,nickName,avatarUrl) value (
+        #{openId},#{nickName},#{avatarUrl}
+        )
+    </insert>
+
+
+
+<!--    <resultMap id="theRoom" type="map">-->
+<!--        <result column="rId" property="rId"/>-->
+<!--        <result column="rName" property="rName"/>-->
+<!--        <result column="address" property="address"/>-->
+<!--        <result column="lId" property="lId"/>-->
+<!--        <result column="uId" property="uId"/>-->
+<!--        <result column="state" property="state"/>-->
+<!--        <result column="lDate" property="lDate"/>-->
+<!--        <result column="avatarUrl" property="avatarUrl"/>-->
+<!--        <result column="nickName" property="nickName"/>-->
+<!--    </resultMap>-->
+<!--    <select id="isInRoom" resultMap="theRoom">-->
+<!--        select w.avatarurl,w.nickName ,r.*,l.* from wxUser w,room r,log l-->
+<!--        where w.uid=#{uId} and w.rid = r.rid and w.rid = l.rid-->
+<!--        order by lDate desc-->
+<!--    </select>-->
+
+
+
+    <update id="updateRoom">
+        update wxUser set
+        <if test="rId==null">
+            rId = null
+        </if>
+        <if test="rId!=null">
+            rId = #{rId}
+        </if>
+        where uId = #{uId}
+    </update>
+
+    <select id="getOnlineRoom" resultType="int">
+        select rId from wxUser where uId=#{uId}
+    </select>
+
+
+
+
+
+    <select id="getOnlineUser" resultType="int">
+        select count(*) from wxUser where rid=?
+    </select>
+    <update id="updateWxUser" >
+        update  wxUser set rid=? where uid=?
+    </update>
+</mapper>

@@ -1,0 +1,108 @@
+
+.addBtnBox {
+	position: fixed;
+	z-index: 900;
+	width: 140rpx;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 140rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.addBtn {
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	background: #444857;
+	line-height: 100rpx;
+	text-align: center;
+	-webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.container999 {
+	width: 100vw;
+	font-size: 28rpx;
+	min-height: 100vh;
+	overflow: hidden;
+	color: #6B8082;
+	position: relative;
+	background-color: #f6f6f6;
+}
+.content {
+	width: 100%;
+}
+.card {
+	width: 90%;
+	height: 368rpx;
+	background-color: white;
+	margin: 0 auto 42rpx auto;
+	background: #FFFFFF;
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.10);
+	        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.10);
+	border-radius: 5px;
+	position: relative;
+}
+.noCard {
+	width: 90%;
+	height: 200rpx;
+	margin: auto;
+	background-color: white;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	color: #999999;
+	-webkit-box-shadow: 0 0 10rpx 0 rgba(0, 0, 0, 0.10);
+	        box-shadow: 0 0 10rpx 0 rgba(0, 0, 0, 0.10);
+	border-radius: 10rpx;
+}
+.nav {
+	position: fixed;
+	left: 0;
+	color: white;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	font-size: 24rpx;
+	background-color: #0081ff;
+	z-index: 996;
+}
+.input999 {
+	color: #999;
+	width: 80%;
+}
+

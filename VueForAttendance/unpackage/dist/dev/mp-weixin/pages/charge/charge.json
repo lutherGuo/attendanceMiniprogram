@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "click-circle": "/components/zwy/clickCircle"
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mapper.RealNameMapper">
+        <select id="getBySidAndPwd" resultType="RealName" >
+                select * from realName where sId=#{sId} and password =#{password}
+        </select>
+
+        <update id="tieUid">
+                update realName set uId = #{uId} where sId = #{sId}
+        </update>
+
+        <select id="getByUid" resultType="RealName" >
+                select * from realName where uId=#{uId}
+        </select>
+</mapper>

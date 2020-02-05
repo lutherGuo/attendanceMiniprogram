@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "click-circle": "/components/zwy/zwy-clickCircle",
+    "home": "/pages/home/home"
+  }
+}

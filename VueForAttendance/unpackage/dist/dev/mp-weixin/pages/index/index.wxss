@@ -1,0 +1,44 @@
+
+.addBtn {
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	background: #444857;
+	line-height: 100rpx;
+	text-align: center;
+	-webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.addBtnBox {
+	position: fixed;
+	z-index: 900;
+	width: 140rpx;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 140rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+
+.container{
+	width: 100vw;
+	font-size: 28rpx;
+	min-height: 100vh;
+	overflow: hidden;
+	color: #6B8082;
+	position: relative;
+	background-color: #f6f6f6;
+}
+

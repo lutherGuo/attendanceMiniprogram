@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.RoomMapper">
+<!--    <resultMap type="com.pojo.Room" id="resultRoomList">-->
+<!--        <result column="rId" property="rId"></result>-->
+<!--        <result column="rName" property="rName"/>-->
+<!--        <result column="address" property="address"/>-->
+<!--        <result column="del" property="del"/>-->
+<!--    </resultMap>-->
+    <select id="getRoomList" resultType="Room">
+        select * from room
+        <if test="rId!=null">
+            where rId=#{rId}
+        </if>
+
+        <if test="rId==null">
+            where del = 1
+        </if>
+    </select>
+
+   <!-- <select id="getRoomById" resultType="Room">
+        select * from room where rId=#{rId}
+    </select>
+    <insert id="addRoom">
+        insert into room values (#{rId},#{rName},#{address},#{del})
+    </insert>
+    <delete id="deleteRoom">
+        delete from room where rId=#{rId}
+    </delete>
+    <update id="updateRoom">
+        update room set rName=#{rName},address=#{address},del=#{del} where rId=#{rId}
+    </update>
+    <resultMap id="detailRoom" type="Room">&lt;!&ndash;一对多关联查询  &ndash;&gt;
+        <id property="rId" column="rId"/>
+        <result property="rName" column="rName"/>
+        <result property="address" column="address"/>
+        <result property="del" column="del"/>
+        <collection property="wxUser"  ofType="WxUser">
+            <id column="uId" property="uId"/>
+            <result column="openId" property="openId"/>
+            <result column="nickName" property="nickName"/>
+            <result column="avatrUrl" property="avatrUrl"/>
+            <result column="activity" property="activity"/>
+            <result column="sSuper" property="sSuper"/>
+        </collection>
+    </resultMap>
+    <select id="selectRoomById" resultMap="detailRoom">
+select a.rId,rName,address,c.uId,nickName,sSuper
+from room a,roomadmin b,wxuser c
+where b.rId=a.rId and c.uId=b.uId and a.rId=#{rId}
+</select>-->
+</mapper>

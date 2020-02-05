@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "refresh": "/components/zwy/refresh",
+    "nav-tab": "/components/zwy/navTab",
+    "click-circle": "/components/zwy/clickCircle"
+  }
+}
