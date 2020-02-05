@@ -1,29 +1,5 @@
 # attendanceMiniprogram
 
-## 开门见山
-**主页**
-<img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/home.jpg?raw=true" alt="fefe" style="zoom: 10%;" /><img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/home2.jpg?raw=true" alt="fefe" style="zoom: 10%;" />
-
-
-
-**管理界面**
-  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/charge.jpg?raw=true" alt="fefe" style="zoom: 10%;" />
-**排行榜**
-  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/rank.jpg?raw=true" style="zoom:10%;" />
-**日志**
-  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/log.jpg?raw=true" alt="fefe" style="zoom: 10%;" /><img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/log2.jpg?raw=true" alt="fefe" style="zoom: 10%;" />
-**个人信息**
-  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/profile.jpg?raw=true" alt="fefe" style="zoom: 10%;" /><img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/profile2.jpg?raw=true" alt="fefe" style="zoom: 10%;" />
-
-
-
-
-
-
-
-
-
-
 ## 简介
 
 这是一个结合线下的指纹出勤管理小程序
@@ -42,7 +18,30 @@
 
 采用**Springboot**它的好兄弟**Mybatis**作为后台，服务器是**Tomcat**，编辑器是**IDEA **，采用调用接口的形式接收前端传的值，然后返回json给前端
 
-## 联系
+# 页面
+## **主页**
+
+<img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/home.jpg?raw=true" alt="fefe" style="zoom: 10%;" /><img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/home2.jpg?raw=true" alt="fefe" style="zoom: 10%;" />
+
+
+
+## **管理界面**
+
+  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/charge.jpg?raw=true" alt="fefe" style="zoom: 10%;" />
+
+## **排行榜**
+
+  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/rank.jpg?raw=true" style="zoom:10%;" />
+
+## **日志**
+
+  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/log.jpg?raw=true" alt="fefe" style="zoom: 10%;" /><img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/log2.jpg?raw=true" alt="fefe" style="zoom: 10%;" />
+
+## **个人信息**
+
+  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/profile.jpg?raw=true" alt="fefe" style="zoom: 10%;" /><img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/profile2.jpg?raw=true" alt="fefe" style="zoom: 10%;" />
+
+# 联系
 
 QQ：1138312802
 
