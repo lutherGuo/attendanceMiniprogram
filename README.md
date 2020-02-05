@@ -1,5 +1,7 @@
 # attendanceMiniprogram
 
+![](https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/attendance.png?raw=true)
+
 ## 简介
 
 这是一个结合线下的指纹出勤管理小程序
