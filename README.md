@@ -1,6 +1,26 @@
 # attendanceMiniprogram
 
 ## 开门见山
+**主页**
+<img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/home.jpg?raw=true" alt="fefe" style="zoom: 25%;" /><img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/home2.jpg?raw=true" alt="fefe" style="zoom: 25%;" />
+
+
+
+**管理界面**
+  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/charge.jpg?raw=true" alt="fefe" style="zoom: 25%;" />
+**排行榜**
+  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/rank.jpg?raw=true" style="zoom:25%;" />
+**日志**
+  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/log.jpg?raw=true" alt="fefe" style="zoom: 25%;" /><img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/log2.jpg?raw=true" alt="fefe" style="zoom: 25%;" />
+**个人信息**
+  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/profile.jpg?raw=true" alt="fefe" style="zoom: 25%;" /><img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/profile2.jpg?raw=true" alt="fefe" style="zoom: 25%;" />
+
+
+
+
+
+
+
 
 
 
