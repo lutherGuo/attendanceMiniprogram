@@ -27,23 +27,23 @@
 - 实现管理员功能
 
 # 页面
-## **主页**
+## 主页
 
 <center><img src="pictures/home.jpg" width="300" /><img src="pictures/home2.jpg" width="300" /></center>
 
-## **管理界面**
+## 管理界面
 
   <center><img src="pictures/charge.jpg" width="300"></center>
-## **排行榜**
+## 排行榜
 
   <center><img src="pictures/rank.jpg" width="300" /></center>
-## **日志**
+## 日志
 
   <center><img src="pictures/log.jpg" width="300" /><img src="pictures/log2.jpg" width="300" /></center>
-## **个人信息**
+## 个人信息
 
   <center><img src="pictures/profile.jpg" width="300" /><img src="pictures/profile2.jpg" width="300" /></center>
-# 联系
+## 联系
 
 QQ：1138312802
 
