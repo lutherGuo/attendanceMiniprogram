@@ -1,6 +1,6 @@
-# ![](pictures/attendanceMiniprogram.png)
+<center><img src="pictures/attendanceMiniprogram.png"  /></center>
 
-![](https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/attendance.png?raw=true)
+<center><img src="pictures/attendance.png" style="zoom:25%;" /></center>
 
 ## 简介
 
