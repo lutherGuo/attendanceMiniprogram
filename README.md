@@ -29,11 +29,12 @@
 # 页面
 ## 主页
 
-<center><img src="pictures/home.jpg" width="300" /><img src="pictures/home2.jpg" width="300" /></center>
+
+
 ## 管理界面
 
   <center><img src="pictures/charge.jpg" width="300"></center>
-##排行榜
+## 排行榜
 
   <center><img src="pictures/rank.jpg" width="300" /></center>
 ## 日志
@@ -49,6 +50,8 @@ QQ：1138312802
 wechat：a1138312802
 
 **Please feel free to contact me if you have any questions.:call_me_hand:**
+
+
 
 
 
