@@ -1,6 +1,6 @@
 <center><img src="pictures/attendanceMiniprogram.png"  /></center>
 
-<center><img src="pictures/attendance.png" style="zoom:25%;" /></center>
+<center><img src="pictures/attendance.png" style="width:25%;" /></center>
 
 ## 简介
 
