@@ -1,6 +1,7 @@
 <center><img src="pictures/attendanceMiniprogram.png"  /></center>
-
-<center><img src="pictures/attendance.png" width="100" /></center>
+未完善
+<center><img src="pictures/attendance.png"  /></center>
+未完善
 
 ## 简介
 
@@ -28,28 +29,20 @@
 # 页面
 ## **主页**
 
-<img src="pictures/home.jpg" style="zoom:50%;" />
-
-<img src="pictures/home2.jpg" style="zoom:50%;" />
-
-
+<center><img src="pictures/home.jpg" width="300" /><img src="pictures/home2.jpg" width="300" /></center>
 
 ## **管理界面**
 
-  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/charge.jpg?raw=true" alt="fefe" style="zoom: 10%;" />
-
+  <center><img src="pictures/charge.jpg" width="300"></center>
 ## **排行榜**
 
-  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/rank.jpg?raw=true" style="zoom:10%;" />
-
+  <center><img src="pictures/rank.jpg" width="300" /></center>
 ## **日志**
 
-  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/log.jpg?raw=true" alt="fefe" style="zoom: 10%;" /><img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/log2.jpg?raw=true" alt="fefe" style="zoom: 10%;" />
-
+  <center><img src="pictures/log.jpg" width="300" /><img src="pictures/log2.jpg" width="300" /></center>
 ## **个人信息**
 
-  <img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/profile.jpg?raw=true" alt="fefe" style="zoom: 10%;" /><img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/profile2.jpg?raw=true" alt="fefe" style="zoom: 10%;" />
-
+  <center><img src="pictures/profile.jpg" width="300" /><img src="pictures/profile2.jpg" width="300" /></center>
 # 联系
 
 QQ：1138312802
