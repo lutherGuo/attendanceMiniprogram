@@ -1,4 +1,4 @@
-# attendanceMiniprogram
+# ![](pictures/attendanceMiniprogram.png)
 
 ![](https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/attendance.png?raw=true)
 
@@ -28,7 +28,9 @@
 # 页面
 ## **主页**
 
-<img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/home.jpg?raw=true" alt="fefe" style="zoom: 10%;" /><img src="https://github.com/LifeAlsoIsGG/attendanceMiniprogram/blob/master/pictures/home2.jpg?raw=true" alt="fefe" style="zoom: 10%;" />
+<img src="pictures/home.jpg" style="zoom:50%;" />
+
+<img src="pictures/home2.jpg" style="zoom:50%;" />
 
 
 
