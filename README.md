@@ -33,7 +33,7 @@
 ## 管理界面
 
   <center><img src="pictures/charge.jpg" width="300"></center>
-## 管理界面
+##排行榜
 
   <center><img src="pictures/rank.jpg" width="300" /></center>
 ## 日志
