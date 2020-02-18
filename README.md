@@ -33,10 +33,10 @@
 
 ## 管理界面
 
-  <img src="pictures/charge.jpg" width="300">
+  <img src="pictures/charge.jpg" width="300"><img src="pictures/charge.jpg" width="300">
 ## 排行榜
 
-  <img src="pictures/rank.jpg" width="300" />
+  <img src="pictures/rank.jpg" width="300" /><img src="pictures/rank.jpg" width="300"/>
 ## 日志
 
   <img src="pictures/log.jpg" width="300" /><img src="pictures/log2.jpg" width="300" />
