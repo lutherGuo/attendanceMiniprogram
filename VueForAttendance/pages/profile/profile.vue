@@ -311,7 +311,7 @@
 				console.log("that.userInfo.uId=" + this.userInfo)
 				var that = this;
 				uni.request({
-					url: "https://impl.lifeisgg.online/attendance/wxUser/login",
+					url: "https://api.lifeisgg.online/attendance/wxUser/login",
 					data: {
 						"openId": that.userInfo.openid,
 						"avatarUrl": that.userInfo.avatarUrl,
@@ -328,7 +328,7 @@
 						that.userInfo.uId = res.data.wxUserInfo.uId
 						that.userInfo.sSuper = res.data.wxUserInfo.sSuper
 						uni.request({
-							url: "https://impl.lifeisgg.online/attendance/realName/getRealName",
+							url: "https://api.lifeisgg.online/attendance/realName/getRealName",
 							data: {
 								"uId": that.userInfo.uId
 							},
@@ -371,7 +371,7 @@
 
 				console.log("that.userInfo.uId=" + this.userInfo)
 				uni.request({
-					url: "https://impl.lifeisgg.online/attendance/realName/getRealName",
+					url: "https://api.lifeisgg.online/attendance/realName/getRealName",
 					data: {
 						"uId": that.userInfo.uId
 					},
@@ -439,7 +439,7 @@
 					return false
 				}
 				uni.request({
-					url: "https://impl.lifeisgg.online/attendance/realName/tieRealName",
+					url: "https://api.lifeisgg.online/attendance/realName/tieRealName",
 					data: {
 						"uId": that.userInfo.uId,
 						"sId": e.detail.value.sId,

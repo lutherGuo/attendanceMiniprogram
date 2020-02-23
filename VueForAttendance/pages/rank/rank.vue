@@ -161,7 +161,7 @@
 			getAllUserTime() {
 				var that = this;
 				uni.request({
-					url: "https://impl.lifeisgg.online/attendance/time/getAllUserTime",
+					url: "https://api.lifeisgg.online/attendance/time/getAllUserTime",
 					success(res) {
 						console.log(res.data)
 						that.AllUserTime = res.data.allUserTime

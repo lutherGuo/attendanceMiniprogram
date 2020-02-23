@@ -190,7 +190,7 @@
 			getRoom() {
 				var that = this;
 				uni.request({
-					url: "https://impl.lifeisgg.online/attendance/home/home",
+					url: "https://api.lifeisgg.online/attendance/home/home",
 					data: {
 						"uId": that.userInfo.uId,
 						"rId": "",
@@ -220,7 +220,7 @@
 			getRoomList() {
 				var that = this;
 				uni.request({
-					url: "https://impl.lifeisgg.online/attendance/room/room",
+					url: "https://api.lifeisgg.online/attendance/room/room",
 					success(res) {
 						that.pickRoomList = res.data.roomList
 						console.log(that.pickRoomList)
@@ -267,7 +267,7 @@
 				var that = this;
 				let now = moment().format('YYYY-MM-DD HH:mm:ss')
 				uni.request({
-					url: "https://impl.lifeisgg.online/attendance/home/home",
+					url: "https://api.lifeisgg.online/attendance/home/home",
 					data: {
 						"uId": that.userInfo.uId,
 						"rId": that.chooseRoom,
@@ -301,7 +301,7 @@
 							let address = that.roomLog[0].address
 							let rId = that.roomLog[0].rId
 							uni.request({
-								url: "https://impl.lifeisgg.online/attendance/home/home",
+								url: "https://api.lifeisgg.online/attendance/home/home",
 								data: {
 									"uId": that.userInfo.uId,
 									"rId": rId,

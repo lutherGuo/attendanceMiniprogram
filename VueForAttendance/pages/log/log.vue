@@ -251,7 +251,7 @@
 				var that = this;
 
 				uni.request({
-					url: "https://impl.lifeisgg.online/attendance/log/getLog",
+					url: "https://api.lifeisgg.online/attendance/log/getLog",
 					data: {
 						"uId": that.userInfo.uId,
 						"rId": ""
@@ -281,7 +281,7 @@
 				var that = this
 				if (that.userInfo.uId && rId) {
 					uni.request({
-						url: "https://impl.lifeisgg.online/attendance/log/getLog",
+						url: "https://api.lifeisgg.online/attendance/log/getLog",
 						data: {
 							"uId": that.userInfo.uId,
 							"rId": rId
