@@ -12,7 +12,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.9.2",
 	"appid": "wx39ffbabf13ebf2ef",
-	"projectname": "%E6%8C%87%E7%BA%B9%E8%80%83%E5%8B%A4%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"projectname": "指纹考勤小程序",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {

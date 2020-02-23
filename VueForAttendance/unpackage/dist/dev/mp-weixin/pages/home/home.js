@@ -338,7 +338,7 @@ var util = __webpack_require__(/*! ../../components/zwy/util/util.js */ 151);var
       isY: 999, //放在store统一管理
       toView: '', showPicker: true, pickRoomList: [], chooseRoom: "", MsgInfo: {} };}, onShow: function onShow() {console.log((0, _moment.default)().format('YYYY-MM-DD HH:mm:ss'));this.isLogin();if (!this.userInfo.realNameInfo) {uni.showModal({ title: "请先实名", showCancel: false, success: function success(res) {if (res.confirm) {console.log("确定了啊");uni.switchTab({ url: "/pages/profile/profile" });}} });} else {this.getRoom();this.getRoomList();}}, // 转化毫秒时间戳为日期格式
   filters: { getYMD: function getYMD(value) {return (0, _moment.default)(value).format('YYYY-MM-DD');}, getHm: function getHm(value) {return (0, _moment.default)(value).format('HH:mm');}, getDay: function getDay(value) {return (0, _moment.default)(value).format('E');}, getLength: function getLength(value) {return value.length;} }, methods: { conClick: function conClick(e) {this.$refs.clickCircle.conClick(e);}, toTop: function toTop() {var _this = this;this.toView = '';setTimeout(function () {_this.toView = 'top' + _this.currentTab;}, 10);}, // 判断登录
-    isLogin: function isLogin() {this.userInfo = global.isLogin();console.log(this.userInfo);if (!this.userInfo) {uni.showModal({ title: "请先登录", showCancel: false, success: function success(res) {if (res.confirm) {console.log("确定了啊");uni.switchTab({ url: "/pages/profile/profile" });}} });}}, getRoom: function getRoom() {var that = this;uni.request({ url: "https://impl.lifeisgg.online/attendance/home/home", data: {
+    isLogin: function isLogin() {this.userInfo = global.isLogin();console.log(this.userInfo);if (!this.userInfo) {uni.showModal({ title: "请先登录", showCancel: false, success: function success(res) {if (res.confirm) {console.log("确定了啊");uni.switchTab({ url: "/pages/profile/profile" });}} });}}, getRoom: function getRoom() {var that = this;uni.request({ url: "https://api.lifeisgg.online/attendance/home/home", data: {
           "uId": that.userInfo.uId,
           "rId": "",
           "state": "",
@@ -367,7 +367,7 @@ var util = __webpack_require__(/*! ../../components/zwy/util/util.js */ 151);var
     getRoomList: function getRoomList() {
       var that = this;
       uni.request({
-        url: "https://impl.lifeisgg.online/attendance/room/room",
+        url: "https://api.lifeisgg.online/attendance/room/room",
         success: function success(res) {
           that.pickRoomList = res.data.roomList;
           console.log(that.pickRoomList);
@@ -414,7 +414,7 @@ var util = __webpack_require__(/*! ../../components/zwy/util/util.js */ 151);var
       var that = this;
       var now = (0, _moment.default)().format('YYYY-MM-DD HH:mm:ss');
       uni.request({
-        url: "https://impl.lifeisgg.online/attendance/home/home",
+        url: "https://api.lifeisgg.online/attendance/home/home",
         data: {
           "uId": that.userInfo.uId,
           "rId": that.chooseRoom,
@@ -448,7 +448,7 @@ var util = __webpack_require__(/*! ../../components/zwy/util/util.js */ 151);var
             var address = that.roomLog[0].address;
             var rId = that.roomLog[0].rId;
             uni.request({
-              url: "https://impl.lifeisgg.online/attendance/home/home",
+              url: "https://api.lifeisgg.online/attendance/home/home",
               data: {
                 "uId": that.userInfo.uId,
                 "rId": rId,
