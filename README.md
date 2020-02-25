@@ -1,6 +1,8 @@
-<center><img src="pictures/attendanceMiniprogram.png"  /></center>
+<div align=center><img src="pictures/attendanceMiniprogram.png"  /></div>
+
 未完善
-<center><img src="pictures/attendance.png"  /></center>
+<div align=center><img src="pictures/attendance.png"  /></div>
+
 未完善
 
 ## 简介
