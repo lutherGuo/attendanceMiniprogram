@@ -1,9 +1,9 @@
-<div align=center><img src="pictures/attendanceMiniprogram.png"  /></div>
-<div align=center><img src="pictures/attendance.png" /></div>
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/attendanceMiniprogram/pictures/attendanceMiniprogram.png"  /></div>
+<div align=center><img src="https://cdn.jsdelivr.net/gh/lifealsoisgg/attendanceMiniprogram/pictures/attendance.png" /></div>
 <div align=center>tips:未完善</div>
 
 
-## 简介
+## 简介brief
 
 这是一个结合线下的指纹出勤管理小程序
 
@@ -25,25 +25,63 @@
 
 - 前端界面优化，逻辑优化
 - 实现管理员功能
+- 线下指纹识别硬件结合
 
-# 页面
-## 主页
+# 页面pages
 
-<img src="pictures/home.jpg" width="300" /><img src="pictures/home2.jpg" width="300" />
 
-## 管理界面
+## 主页home
 
-  <img src="pictures/charge.jpg" width="300"><img src="pictures/charge.jpg" width="300">
-## 排行榜
+<div align=center>  
+  <table><tr>    
+    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/attendanceMiniprogram/pictures/home.jpg" />    
+    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/attendanceMiniprogram/pictures/home2.jpg" />    
+    </tr></table>
+</div>
 
-  <img src="pictures/rank.jpg" width="300" /><img src="pictures/rank.jpg" width="300"/>
-## 日志
 
-  <img src="pictures/log.jpg" width="300" /><img src="pictures/log2.jpg" width="300" />
-## 个人信息
 
-  <img src="pictures/profile.jpg" width="300" /><img src="pictures/profile2.jpg" width="300" />
-## 联系
+## 管理manage
+
+<div align=center>    
+    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/attendanceMiniprogram/pictures/charge.jpg" />    
+</div>
+
+
+
+## 排行榜rank
+
+
+<div align=center>        
+    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/attendanceMiniprogram/pictures/rank.jpg" />        
+</div>
+
+
+
+## 日志log
+
+<div align=center>  
+  <table><tr>    
+    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/attendanceMiniprogram/pictures/log.jpg" />    
+    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/attendanceMiniprogram/pictures/log2.jpg"/>    
+    </tr></table>
+</div>
+
+
+
+## 个人信息profile
+
+
+<div align=center>  
+  <table><tr>    
+    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/attendanceMiniprogram/pictures/profile.jpg" />    
+    <img width="50%" src="https://cdn.jsdelivr.net/gh/lifealsoisgg/attendanceMiniprogram/pictures/profile2.jpg"/>    
+    </tr></table>
+</div>
+
+
+
+# 联系contact
 
 QQ：1138312802
 
@@ -51,6 +89,5 @@ wechat：a1138312802
 
 **Please feel free to contact me if you have any questions.:call_me_hand:**
 
-<div align=center><img src=pictures/123.jpg/></div>
 
 
