@@ -1,6 +1,8 @@
 <div align=center><img src="pictures/attendanceMiniprogram.png"  /></div>
 <div align=center><img src="pictures/attendance.png" /></div>
 <div align=center>tips:未完善</div>
+
+
 ## 简介
 
 这是一个结合线下的指纹出勤管理小程序
@@ -50,6 +52,5 @@ wechat：a1138312802
 **Please feel free to contact me if you have any questions.:call_me_hand:**
 
 <div align=center><img src=pictures/123.jpg/></div>
-
 
 
